@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CourtCounter</string>
+    <string name="third_option">TOUCHDOWN(+6)</string>
+    <string name="second_option">FEILD GOAL(+3)</string>
+    <string name="first_option">SAFETY(+2)</string>
+    <string name="sportName">FOOTBALL SCORE KEEPER</string>
+</resources>

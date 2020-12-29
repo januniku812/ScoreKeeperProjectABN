@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="0dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameOfSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:textSize="15sp"
+        android:text="@string/sportName" />
+    <!-- First nested linear layout that represent all the options and the score for TeamA-->
+
+    <LinearLayout
+        android:id="@+id/teamA"
+        android:layout_width="174dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TeamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:textSize="15sp"
+            android:text="Team A" />
+
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="0" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="addTwoToTeamA"
+            android:textSize="15sp"
+            android:text="@string/first_option" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:onClick="addThreeToTeamA"
+            android:textSize="15sp"
+            android:text="@string/second_option"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:onClick="addSixToTeamA"
+            android:text="@string/third_option" />
+
+    </LinearLayout>
+    <!-- Second nested linear layout that represent all the options and the score for TeamA-->
+    <LinearLayout
+        android:id="@+id/teamB"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="-211dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TeamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="70dp"
+            android:text="Team B" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="0" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:onClick="addTwoToTeamB"
+            android:textSize="15sp"
+            android:text="@string/first_option" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:onClick="addThreeToTeamB"
+            android:textSize="15sp"
+            android:text="@string/second_option"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:onClick="addSixToTeamB"
+            android:textSize="15sp"
+            android:text="@string/third_option" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="150dp"
+        android:textSize="15sp"
+        android:onClick="reset"
+        android:text="Reset" />
+</LinearLayout>
